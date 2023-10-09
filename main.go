@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	//"fmt"
 	"github.com/bigDev/cardsGame/deck"
 )
 
@@ -9,9 +9,9 @@ import (
 
 
 func main() {
-	cards := deck.NewDeck()
+	cards := deck.NewDeckFromFile("my_cards")
 
-	fmt.Println(cards.ToString())
+	cards.Print()
 	
 	// cards.Print()
 	
